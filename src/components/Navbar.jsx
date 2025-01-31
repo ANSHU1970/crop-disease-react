@@ -45,7 +45,7 @@ function Navbar() {
     </div>
   </div>
 </nav>
-
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     
     </>
   )
