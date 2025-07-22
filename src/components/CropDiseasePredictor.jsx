@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 
 const CropDiseasePredictor = () => {
   const crops = [
-    { name: 'Potato', apiUrl: 'https://potato-disease-api-9cqs.onrender.com/predict' },
-    { name: 'Tomato', apiUrl: 'https://tomato-disease-api.onrender.com/predict' },
-    { name: 'Rice', apiUrl: 'https://crop-rice-disease-api.onrender.com/predict' },
-    { name: 'Wheat', apiUrl: 'https://wheat-disease-api.onrender.com/predict' },
-    { name: 'Corn', apiUrl: 'https://corn-disease-api.onrender.com/predict' },
-    { name: 'Pea', apiUrl: 'https://pea-disease-api.onrender.com/predict'},
+    { name: 'Potato', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/potato' },
+    { name: 'Tomato', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/tomato' },
+    { name: 'Rice', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/rice' },
+    { name: 'Wheat', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/wheat' },
+    { name: 'Corn', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/corn' },
+    { name: 'Pea', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/pea'},
   ];
 
   const [selectedImages, setSelectedImages] = useState({});
