@@ -1,48 +1,43 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Navbar from './Navbar'
 import { Link } from "react-router-dom";
-
 
 function Hero() {
   return (
-    <>
-    
-<section
-  className="relative bg-[url(https://images.unsplash.com/photo-1507484467459-0c01be16726e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNyb3BzfGVufDB8fDB8fHww)] bg-cover bg-no-repeat h-screen w-screen"
->
-  <div
-    className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
-  ></div>
-
-  <div
-    className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
-  >
-    <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h1 className="text-3xl text-red-600 font-extrabold sm:text-5xl">
-        Crop Care
-
-        <strong className="block font-extrabold text-green-400"> Take Care of the Crops </strong>
-      </h1>
-
-      <p className="text-white mt-4 max-w-lg sm:text-xl/relaxed">
-       Website to detect the plant or crop disease and to cure the disease.
-      </p>
-
-      <div className="mt-8 flex flex-wrap gap-4 text-center">
-      <Link
-      to="/CropDiseasePredictor"
-      className="mx-auto block w-full rounded
-       bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow
-        hover:bg-green-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+    <section
+      className="relative min-h-screen w-full flex items-center justify-center 
+        bg-[url(https://images.unsplash.com/photo-1507484467459-0c01be16726e?w=1500&auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNyb3BzfGVufDB8fDB8fHww)] 
+        bg-cover bg-center"
     >
-      Get Started
-    </Link>
+      {/* Glass Panel/Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-green-950/40 to-white/20 backdrop-blur-sm p-2"></div>
+
+      <div className="relative z-10 max-w-2xl mx-auto px-8 py-16 bg-white/10 rounded-3xl backdrop-blur-xl border border-white/30 shadow-2xl flex flex-col items-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-md text-center leading-tight">
+          Crop Care
+          <span className="block bg-gradient-to-r from-green-600 via-green-400 to-lime-400 bg-clip-text text-transparent drop-shadow mt-2 animate-gradient">
+            Take Care of the Crops
+          </span>
+        </h1>
+        <p className="mt-6 text-lg md:text-xl text-white/90 text-center font-medium drop-shadow">
+          Website to detect the plant or crop disease and to cure the disease.
+        </p>
+        <div className="flex gap-4 mt-10">
+          <Link
+            to="/CropDiseasePredictor"
+            className="bg-green-600 px-8 py-3 rounded-xl border-2 border-white/40 text-white/90 backdrop-blur transition duration-20 hover:bg-blue-500 font-semibold;"
+          >
+            Get Started
+          </Link>
+          <Link
+            to="/About"
+            className="px-8 py-3 rounded-xl border-2 border-white/40 text-white/90 backdrop-blur transition hover:bg-blue-500 font-semibold"
+          >
+            Learn More
+          </Link>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-    </>
+    </section>
   )
 }
 
