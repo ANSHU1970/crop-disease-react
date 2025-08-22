@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 
 const CropDiseasePredictor = () => {
   const crops = [
-    { name: 'Potato', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/potato' },
-    { name: 'Tomato', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/tomato' },
-    { name: 'Rice', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/rice' },
-    { name: 'Wheat', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/wheat' },
-    { name: 'Corn', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/corn' },
-    { name: 'Pea', apiUrl: 'https://crop-disease-api-production-c467.up.railway.app/predict/pea'},
+    { name: 'Potato', apiUrl: 'https://supporting-kat-anshuman1970-e85037a5.koyeb.app/predict/potato' },
+    { name: 'Tomato', apiUrl: 'https://supporting-kat-anshuman1970-e85037a5.koyeb.app/predict/tomato' },
+    { name: 'Rice', apiUrl: 'https://supporting-kat-anshuman1970-e85037a5.koyeb.app/predict/rice' },
+    { name: 'Wheat', apiUrl: 'https://supporting-kat-anshuman1970-e85037a5.koyeb.app/predict/wheat' },
+    { name: 'Corn', apiUrl: 'https://supporting-kat-anshuman1970-e85037a5.koyeb.app/predict/corn' },
+    { name: 'Pea', apiUrl: 'https://supporting-kat-anshuman1970-e85037a5.koyeb.app/predict/pea'},
   ];
 
   const [selectedImages, setSelectedImages] = useState({});
