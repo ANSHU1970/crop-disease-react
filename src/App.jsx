@@ -17,6 +17,8 @@ function App() {
     <>
       <Router basename='/'>
       <Navbar />
+      <br/>
+      <br/>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/CropDiseasePredictor" element={<CropDiseasePredictor />} />
